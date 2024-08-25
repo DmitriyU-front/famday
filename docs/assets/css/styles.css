@@ -112,7 +112,7 @@ h2 {
 
 .welcome-block {
     width: 100%;
-    background-image: url('/assets/img/header-background.svg');
+    background-image: url('../img/header-background.svg');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 450px;
@@ -232,7 +232,7 @@ h2 {
 .menu__map {
     width: 110%;
     min-height: 250px;
-    background-image: url('/assets/img/foods.png');
+    background-image: url('../img/foods.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 80% 50%;
@@ -307,7 +307,7 @@ h2 {
 .games-map {
     width: 100%;
     min-height: 180px;
-    background-image: url('/assets/img/games.png');
+    background-image: url('../img/games.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
