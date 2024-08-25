@@ -297,7 +297,7 @@
         let btn = document.getElementById(`${modalId}-button`);
 
         modal.style.display = "block";
-        window.onclick = function (event) {
+        window.touchend = function (event) {
           if (event.target == modal) {
             modal.style.display = "none";
             modal = null;
