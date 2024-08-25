@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Family Day 2024</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600;700;800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="/">
+        <div class="games-header">
+          <div class="header__back-button">
+            <img src="/assets/icons/back-button.svg" alt="back-button" />
+          </div>
+          <div class="header__back-button-text">Главная страница</div>
+        </div>
+      </a>
+    </header>
+    <main>
+      <div class="games-container">
+        <div class="headline">
+          <h2>Игры и активности</h2>
+        </div>
+        <div class="games-map"></div>
+        <div class="games-menu">
+          <button
+            id="volleyball-button"
+            class="games__button button"
+            onclick="openModal('volleyball')"
+          >
+            Волейбол
+          </button>
+          <button
+            id="water-volleyball-button"
+            class="games__button button"
+            onclick="openModal('water-volleyball')"
+          >
+            Водяной Волейбол
+          </button>
+          <button
+            id="jenga-button"
+            class="games__button button"
+            onclick="openModal('jenga')"
+          >
+            Дженга оверсайз
+          </button>
+          <button
+            id="cornhole-button"
+            class="games__button button"
+            onclick="openModal('cornhole')"
+          >
+            Корнхолл
+          </button>
+          <button
+            id="ball-1-button"
+            class="games__button button"
+            onclick="openModal('ball-1')"
+          >
+            Навес
+          </button>
+          <button
+            id="ball-2-button"
+            class="games__button button"
+            onclick="openModal('ball-2')"
+          >
+            Ногалуза
+          </button>
+          <button
+            id="boardgames-button"
+            class="games__button button"
+            onclick="openModal('boardgames')"
+          >
+            Настольные игры
+          </button>
+          <button
+            id="sniper-1-button"
+            class="games__button button"
+            onclick="openModal('sniper-1')"
+          >
+            Снайпер 1
+          </button>
+          <button
+            id="sniper-2-button"
+            class="games__button button"
+            onclick="openModal('sniper-2')"
+          >
+            Снайпер 2
+          </button>
+          <button
+            id="streetball-button"
+            class="games__button button"
+            onclick="openModal('streetball')"
+          >
+            Стритбол
+          </button>
+          <button
+            id="frisbee-button"
+            class="games__button button"
+            onclick="openModal('frisbee')"
+          >
+            Фрисби ботл
+          </button>
+          <button
+            id="ball-3-button"
+            class="games__button button"
+            onclick="openModal('ball-3')"
+          >
+            Цепной мяч
+          </button>
+          <button
+            id="handmade-button"
+            class="games__button button"
+            onclick="openModal('handmade')"
+          >
+            Хенд Мейд Зона
+          </button>
+          <button
+            id="airball-button"
+            class="games__button button"
+            onclick="openModal('airball')"
+          >
+            Эйрбол
+          </button>
+          <button
+            id="hooks-button"
+            class="games__button button"
+            onclick="openModal('hooks')"
+          >
+            Крючки
+          </button>
+          <button
+            id="quiz-button"
+            class="games__button button"
+            onclick="openModal('quiz')"
+          >
+            Викторины
+          </button>
+        </div>
+      </div>
+    </main>
+    <div id="volleyball" class="dialog">
+      <div class="dialog-header">
+        <div class="dialog-header__text">Волейбол</div>
+        <div class="dialog-header__close-button">
+          <img src="/assets/icons/close_icon.svg" />
+        </div>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-body__text">
+          <b>Условие:</b> Наберите 2 команды количеством от 2-х до 6-ти
+          человек.<br />
+          <br />
+
+          <b>Если есть очередь:</b>
+          <ul>
+            <li>Длительность каждого матча — 10 минут.</li>
+            <li>
+              Если после вас в очереди больше одной команды, то обе игравшие
+              команды уступают место после матча.
+            </li>
+          </ul>
+          <br />
+
+          <b>Цель:</b> Классический волейбол! Если не знаешь правила, спроси у
+          друга :) <br />
+          <br />
+
+          <div class="game-image">
+            <img src="/assets/img/volleyball.png" alt="volleyball" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="water-volleyball" class="dialog">
+      <div class="dialog-header">
+        <div class="dialog-header__text">Водяной Волейбол</div>
+        <div class="dialog-header__close-button">
+          <img src="/assets/icons/close_icon.svg" />
+        </div>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-body__text">
+          <b>Условие:</b> Наберите 2 команды из 2-х человек.<br />
+          <br />
+
+          <b>Если есть очередь:</b>
+          <ul>
+            <li>Длительность каждого матча — 5 минут.</li>
+            <li>
+              Если после вас в очереди больше одной команды, то обе игравшие
+              команды уступают место после матча.
+            </li>
+          </ul>
+          <br />
+
+          <b>Цель:</b> Перекидывайте полотенцем шарик с водой в зону соперника.
+          <br />
+          <br />
+          <ul>
+            <li>Если вы не попали в доку — сопернику начисляется 1 очко;​</li>
+            <li>
+              Если вы не смогли поймать шарик — сопернику начисляется одно
+              очко;​
+            </li>
+            <li>Игра идет до 3-х очков.</li>
+          </ul>
+          <br />
+          <div class="game-image">
+            <img
+              src="/assets/img/water-volleyball.png"
+              alt="water-volleyball"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="jenga" class="dialog">
+      <div class="dialog-header">
+        <div class="dialog-header__text">Дженга оверсайз</div>
+        <div class="dialog-header__close-button">
+          <img src="/assets/icons/close_icon.svg" />
+        </div>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-body__text">
+          <b>Условие:</b> Н 1 против 1 или 2 против 2-х.<br />
+          <br />
+
+          <b>Если есть очередь:</b>
+          <ul>
+            <li>Уступите другим игрокам после падения башни;</li>
+          </ul>
+          <br />
+
+          <b>Цель:</b> Вытаскивайте бруски по очереди. На чьем ходу башня упадет
+          — тот и проиграл. Можно вытаскивать двумя руками, но касаться можно
+          только вытаскиваемого бруска <br />
+          <br />
+
+          <div class="game-image">
+            <img src="/assets/img/jenga.png" alt="jenga" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="cornhole" class="dialog">
+      <div class="dialog-header">
+        <div class="dialog-header__text">Корнхол</div>
+        <div class="dialog-header__close-button">
+          <img src="/assets/icons/close_icon.svg" />
+        </div>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-body__text">
+          <b>Условие:</b> На каждую доску один участник.<br />
+          <br />
+
+          <b>Если есть очередь:</b>
+          <ul>
+            <li>
+              После завершения 6 бросков, пожалуйста уступи место другому
+              игроку.
+            </li>
+          </ul>
+          <br />
+
+          <b>Цель:</b> Набери как можно больше баллов!
+          <br />
+          <br />
+          <ul>
+            <li>Возьми комплект из 4 мешочков;​</li>
+            <li>Бросай только с обозначенной линии;</li>
+            <li>За попадание в отверстие — 3 балла;</li>
+            <li>За попадание на доску — 1 балл.</li>
+          </ul>
+          <br />
+          <br />
+          <i
+            >Если хочешь поучаствовать в конкурсе на самое большое количество
+            очков, заполни онлайн форму ниже.</i
+          ><br /><br />
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeiJutX92R0fFGCWb0nXR_QoJe8TVl5NqIlT7qRNNCyql96Fg/viewform?usp=sf_link"
+            class="game-link"
+            >Ссылка на онлайн-форму для игры Корнхолл</a
+          >
+          <br />
+          <div class="game-image">
+            <img src="/assets/img/cornhole.png" alt="cornhole" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="ball-1" class="dialog">
+      <div class="dialog-header">
+        <div class="dialog-header__text">Навес</div>
+        <div class="dialog-header__close-button">
+          <img src="/assets/icons/close_icon.svg" />
+        </div>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-body__text">
+          <b>Условие:</b> Наберите 2 команды количеством от 2-х до 6-ти
+          человек.<br />
+          <br />
+
+          <b>Если есть очередь:</b>
+          <ul>
+            <li>Длительность каждого матча — 10 минут;</li>
+            <li>
+              Если после вас в очереди больше одной команды, то обе игравшие
+              команды уступают место после матча.
+            </li>
+          </ul>
+          <br />
+
+          <b>Цель:</b> Забить как можно больше голов противоположной команде.
+          <br />
+          <br />
+          <ul>
+            <li>Право первыми нападать выбирается по согласованию;​</li>
+            <li>Одна команда стоит в воротах, другая пытается забить;</li>
+            <li>
+              Забивающая команда начинает движения мяча с указанной точки;
+            </li>
+            <li>
+              Каждый игрок забивающей команды может прикоснуться к мячу только 1
+              раз;
+            </li>
+            <li>
+              Наносить удар поворотам можно только и состояния "навеса", то есть
+              в воздухе.
+            </li>
+            <li>
+              Если кто-то из обороняющейся команды поймает мяч руками. То
+              команды меняются местами.
+            </li>
+            <li>Игра идет до 5 голов.</li>
+          </ul>
+          <br />
+          <br />
+
+          <div class="game-image">
+            <img src="/assets/img/ball-1.png" alt="ball-1" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="ball-2" class="dialog">
+      <div class="dialog-header">
+        <div class="dialog-header__text">Ногалуза</div>
+        <div class="dialog-header__close-button">
+          <img src="/assets/icons/close_icon.svg" />
+        </div>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-body__text">
+          <b>Условие:</b> 1 против 1 или 2 против 2-х. <br />
+          <br />
+
+          <b>Если есть очередь:</b>
+          <ul>
+            <li>Длительность каждого матча — 10 минут;</li>
+            <li>
+              Если после вас в очереди больше одной команды, то обе игравшие
+              команды уступают место после матча.
+            </li>
+          </ul>
+          <br />
+
+          <b>Цель:</b> Забей все мячики в лузу, используя правило русского
+          бильярда:
+          <br />
+          <br />
+          <ul>
+            <li>Можно использовать любой мяч как ударный;​</li>
+            <li>
+              Засчитывается только мяч попавший в лузу после удара другого мяча;
+            </li>
+            <li>Если ты не забил, то права хода переходит к другой команде</li>
+            <li>
+              Если мяч выпрыгивает за пределы площадки — ход переходит к другой
+              команде.
+            </li>
+          </ul>
+          <br />
+          <br />
+
+          <div class="game-image">
+            <img src="/assets/img/ball-2.png" alt="ball-2" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="boardgames" class="dialog">
+      <div class="dialog-header">
+        <div class="dialog-header__text">Настольные игры</div>
+        <div class="dialog-header__close-button">
+          <img src="/assets/icons/close_icon.svg" />
+        </div>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-body__text">
+          <b>Условие:</b> Выбери любую игру и наслаждайся! Но помни, что
+          возможно кто-то еще захочет в нее поиграть, по этому не забудь вернуть
+          игру на стол с играми. <br />
+          <br />
+        </div>
+      </div>
+    </div>
+    <div id="sniper-1" class="dialog">
+      <div class="dialog-header">
+        <div class="dialog-header__text">Снайпер 1</div>
+        <div class="dialog-header__close-button">
+          <img src="/assets/icons/close_icon.svg" />
+        </div>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-body__text">
+          <b>Условие:</b> На каждую доску один участник.<br />
+          <br />
+
+          <b>Если есть очередь:</b>
+          <ul>
+            <li>
+              После завершения 6 бросков, пожалуйста уступи место другому
+              игроку.
+            </li>
+          </ul>
+          <br />
+
+          <b>Цель:</b> Набери как можно больше баллов!
+          <br />
+          <br />
+          <ul>
+            <li>Возьми комплект из 6 колец;​</li>
+            <li>Бросай только с обозначенной линии;</li>
+            <li>Начисляемые баллы указаны у каждого из крючков.</li>
+          </ul>
+          <br />
+          <br />
+          <i
+            >Если хочешь поучаствовать в конкурсе на самое большое количество
+            очков, заполни онлайн форму ниже.</i
+          ><br /><br />
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeNCb-FBobCSPwpNfdfPQuQspPM2S6IW7OuHLJiI1jJ79GFYg/viewform"
+            class="game-link"
+            >Ссылка на онлайн-форму для игры Снайпер 1</a
+          >
+          <br />
+          <div class="game-image">
+            <img src="/assets/img/sniper-1.png" alt="sniper-1" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sniper-2" class="dialog">
+      <div class="dialog-header">
+        <div class="dialog-header__text">Снайпер 2</div>
+        <div class="dialog-header__close-button">
+          <img src="/assets/icons/close_icon.svg" />
+        </div>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-body__text">
+          <b>Условие:</b> На каждую доску один участник.<br />
+          <br />
+
+          <b>Если есть очередь:</b>
+          <ul>
+            <li>
+              После завершения 6 бросков, пожалуйста уступи место другому
+              игроку.
+            </li>
+          </ul>
+          <br />
+
+          <b>Цель:</b> Набери как можно больше баллов!
+          <br />
+          <br />
+          <ul>
+            <li>Возьми комплект из 6 теннисных мячиков;​</li>
+            <li>Бросай только с обозначенной линии;</li>
+            <li>Начисляемые баллы указаны у каждого из отверстий.</li>
+          </ul>
+          <br />
+          <br />
+          <i
+            >Если хочешь поучаствовать в конкурсе на самое большое количество
+            очков, заполни онлайн форму ниже.</i
+          ><br /><br />
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfpmfb3baDXjMIlPuDK-Kb3pk4qZaSfpAititCdC66x8Q2g5Q/viewform"
+            class="game-link"
+            >Ссылка на онлайн-форму для игры Снайпер 2</a
+          >
+          <br />
+          <div class="game-image">
+            <img src="/assets/img/sniper-2.png" alt="sniper-2" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="streetball" class="dialog">
+      <div class="dialog-header">
+        <div class="dialog-header__text">Стритбол</div>
+        <div class="dialog-header__close-button">
+          <img src="/assets/icons/close_icon.svg" />
+        </div>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-body__text">
+          <b>Условие:</b> Наберите 2 команды по 3 человека.<br />
+          <br />
+
+          <b>Если есть очередь:</b>
+          <ul>
+            <li>Длительность каждого матча - 10 минут;</li>
+            <li>
+              Если после вас в очереди больше одной команды, то обе игравшие
+              команды уступают место после матча.
+            </li>
+          </ul>
+          <br />
+
+          <b>Цель:</b> Классический стритбол! Некоторые уточнения к стандартным
+          правилам:
+          <br />
+          <br />
+          <ul>
+            <li>Право первыми нападать выбирается по согласованию;​</li>
+            <li>Попадание с игры — 1 очко;</li>
+            <li>Попадание с 3-х очковой зоны — 2 очка;</li>
+            <li>Если команда забила, то она передает ход другой команде;</li>
+            <li>
+              Если был совершен перехват, то перехватившая команда сперва должна
+              вывести мяч за пределы 3-х очковой зоны и только потом начать
+              атаку;
+            </li>
+            <li>Игра идет до 10 очков.</li>
+          </ul>
+          <br />
+          <br />
+          <div class="game-image">
+            <img src="/assets/img/streetball.png" alt="streetball" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="frisbee" class="dialog">
+      <div class="dialog-header">
+        <div class="dialog-header__text">Фрисби ботл</div>
+        <div class="dialog-header__close-button">
+          <img src="/assets/icons/close_icon.svg" />
+        </div>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-body__text">
+          <b>Условие:</b> Наберите 2 команды по 2 человека.<br />
+          <br />
+
+          <b>Если есть очередь:</b>
+          <ul>
+            <li>Длительность каждого матча - 10 минут;</li>
+            <li>
+              Если после вас в очереди больше одной команды, то обе игравшие
+              команды уступают место после матча.
+            </li>
+          </ul>
+          <br />
+
+          <b>Цель:</b> Набери 20 очков! Основные принципы:
+          <br />
+          <br />
+          <ul>
+            <li>
+              Право первыми нападать выбирается по согласованию. Команд бросают
+              по очереди;​
+            </li>
+            <li>
+              Командам необходимо находиться за столбом (дальше друг от друга);
+            </li>
+            <li>За сбитую и упавшую бутылку — 3 очка;</li>
+            <li>За сбитую, но пойманную бутылку — 1 очко;</li>
+            <li>За упавшее фрисби, после столкновения с бутылкой — 2 очка.</li>
+            <li>Если команда забила, то она передает ход другой команде;</li>
+            <li>Игра идет до 20 очков.</li>
+          </ul>
+          <br />
+          <br />
+          <div class="game-image">
+            <img src="/assets/img/frisbee.png" alt="frisbee" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="ball-3" class="dialog">
+      <div class="dialog-header">
+        <div class="dialog-header__text">Цепной мяч</div>
+        <div class="dialog-header__close-button">
+          <img src="/assets/icons/close_icon.svg" />
+        </div>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-body__text">
+          <b>Условие:</b> 1 против 1-го.<br />
+          <br />
+
+          <b>Если есть очередь:</b>
+          <ul>
+            <li>Длительность каждого матча - 10 минут;</li>
+            <li>
+              Если после вас в очереди больше одного человека, то оба игравших
+              уступают место после матча;
+            </li>
+          </ul>
+          <br />
+
+          <b>Цель:</b> Закрути мяч на столб! Одни игрок пытается закрутить в
+          одну сторону. Другой в другую!
+          <br />
+          <br />
+          <ul>
+            <li>Кто начнет — выбирается по согласованию;</li>
+            <li>
+              После 1 раунда меняйте стороны в которые вы закручивали мяч.
+              Например, если в первом раунде вы пытались закрутить по часовой,
+              то теперь пытайтесь закрутить против. А соперник наоборот;
+            </li>
+            <li>За кадый закрут — 1 очко;</li>
+            <li>Игра продолжается до 4-х очков.</li>
+          </ul>
+          <br />
+          <br />
+          <div class="game-image">
+            <img src="/assets/img/ball-3.png" alt="ball-3" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="handmade" class="dialog">
+      <div class="dialog-header">
+        <div class="dialog-header__text">Hand made <br />Мастер классы</div>
+        <div class="dialog-header__close-button">
+          <img src="/assets/icons/close_icon.svg" />
+        </div>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-body__text">
+          <b>Макраме</b> <br />
+          <b>Мастер-класс с резинкой для волос</b> <br />
+          <br />
+
+          Выбери что ты хочешь сделать и ознакомься с описанием процесса или
+          посмотри обучающее видео по следующим ссылкам:
+          <br />
+
+          <ul>
+            <li>Макраме - человечек;</li>
+            <li>Резинка для волос.</li>
+          </ul>
+          <br />
+
+          <b>Мастер-класс с резинкой для волос</b> <br />
+          <br />
+          Предлагаем вам заняться популярным рукоделием — плетением браслетов из
+          резинок для волос. Это простое и увлекательное занятие нравится и
+          взрослым, и детям.
+          <br /><br />
+          Есть множество способов плетения, от простых до сложных узоров. Также
+          можно создать резинку для волос по своему вкусу. <br /><br />
+          <ol>
+            <li>Выберите понравившиеся цвета.</li>
+            <li>
+              Наденьте перекрученную резинку на указательный и средний пальцы.
+            </li>
+            <li>
+              Добавьте сверху еще одну резинку и перекиньте концы нижней резинки
+              на нее.
+            </li>
+            <li>Продолжайте, пока браслет не достигнет нужной длины.</li>
+            <li>
+              Закрепите концы, соединив резинки и при желании добавьте бусины.
+            </li>
+          </ol>
+          <br />
+          <br />
+          Готово! <br /><br />
+
+          Возьми все необходимое для работы. Все изготовленное можно забрать с
+          собой!
+          <br /><br />
+
+          <div class="game-image">
+            <img src="/assets/img/handmade.png" alt="handmade" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="airball" class="dialog">
+      <div class="dialog-header">
+        <div class="dialog-header__text">Эирбол</div>
+        <div class="dialog-header__close-button">
+          <img src="/assets/icons/close_icon.svg" />
+        </div>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-body__text">
+          <b>Условие:</b> Набери команду из 5 человек. <br />
+          <br />
+
+          <b>Если есть очередь:</b>
+          <ul>
+            <li>Длительность каждого матча - 5 минут;</li>
+            <li>
+              Если после вас в очереди больше одной команды, то обе игравшие
+              команды уступают место после раунда;
+            </li>
+          </ul>
+          <br />
+
+          <b>Цель:</b> Задуй мячик в ворота противоположной команды! Расположи
+          свою команду согласно цветовой схеме и вперед!
+          <br />
+          <br />
+
+          <br />
+          <br />
+          <div class="game-image">
+            <img src="/assets/img/airball-field.png" alt="airball-field" />
+          </div>
+          <div class="game-image">
+            <img src="/assets/img/airball.png" alt="airball" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="hooks" class="dialog">
+      <div class="dialog-header">
+        <div class="dialog-header__text">Крючки</div>
+        <div class="dialog-header__close-button">
+          <img src="/assets/icons/close_icon.svg" />
+        </div>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-body__text">
+          <b>Условие:</b> 1 против 1-го.<br />
+          <br />
+
+          <b>Если есть очередь:</b>
+          <ul>
+            <li>Длительность каждого матча - 10 минут;</li>
+            <li>
+              Если после вас в очереди больше одного человека, то оба игравших
+              уступают место после матча.
+            </li>
+          </ul>
+          <br />
+
+          <b>Цель:</b> Налей в стаканчик немного лимонного сока. Забрасывай
+          колечко на крючок! <br />
+          После каждого успешного заброса, перемещай стакан в сторону соперника.
+          Если места на доске закончились, то соперник должен выпить содержимое
+          стакана!
+          <br />
+          <br />
+          <div class="game-image">
+            <img src="/assets/img/hooks.png" alt="hooks" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="quiz" class="dialog">
+      <div class="dialog-header">
+        <div class="dialog-header__text">
+          Викторина <br />
+          "Угадай сколько?"
+        </div>
+        <div class="dialog-header__close-button">
+          <img src="/assets/icons/close_icon.svg" />
+        </div>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-body__text">
+          Кто угадает количество содержимого в банке, тот и получит ее! Заполни
+          онлайн- опрос для участия Результаты будут доступны после ужина на
+          доске возле бара №1.
+          <br /><br />
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfkPkjGsNEQXOdxiKVFVB5oxcts3iLwBQtuKE4yGfpkO9Hs7Q/viewform"
+            class="game-link"
+            >Ссылка на онлайн-опрос</a
+          >
+        </div>
+      </div>
+    </div>
+    <script>
+      function openModal(modalId) {
+        let modal = document.getElementById(modalId);
+        let btn = document.getElementById(`${modalId}-button`);
+
+        modal.style.display = "block";
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+            modal = null;
+          }
+        };
+        let span = modal.getElementsByClassName(
+          `dialog-header__close-button`
+        )[0];
+        span.onclick = function () {
+          modal.style.display = "none";
+          modal = null;
+        };
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Family Day 2024</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600;700;800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="welcome-block">
+        <div class="welcome-block__logo">
+          <img src="/assets/img/logo.svg" alt="" />
+        </div>
+        <div class="welcome-block__button_container">
+          <a href="#schedule" class="welcome-block__buttons">Программа</a>
+          <a href="#menu" class="welcome-block__buttons">Фуд-корт</a>
+          <a href="#activities" class="welcome-block__buttons">Активности</a>
+        </div>
+        <div class="welcome-block__footer">
+          <div class="welcome-block__text-container">
+            <span class="welcome-text"
+              >Добро <br />
+              пожаловать!</span
+            >
+          </div>
+          <div class="welcome-block__announcements">
+            <button
+              id="announcements-button"
+              class="button welcome-block__announcements-button"
+              onclick="openModal('announcements')"
+            >
+              Объявления
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="schedule" class="main-schedule">
+        <div class="headline"><h2>Программа дня</h2></div>
+        <div class="main-schedule__info">
+          <div class="schedule__item">
+            <div class="schedule__time">12:15</div>
+            <div class="schedule__description">
+              <div class="schedule__description_title">Молитва</div>
+              <div class="schedule__description_text">
+                <span class="text-pointer">Место:</span>
+                <span
+                  >Возле 4-го корпуса <br />
+                  Объявления и формат мероприятия</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="schedule__item">
+            <div class="schedule__time">12:20</div>
+            <div class="schedule__description">
+              <div class="schedule__description_title">Обед</div>
+              <div class="schedule__description_text">
+                <span class="text-pointer">Место:</span>
+                <span
+                  >см. карту локаций ниже<br /><i
+                    >В 13:00 оставшаяся еда будет убрана в столовую</i
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="schedule__item">
+            <div class="schedule__time">13:15</div>
+            <div class="schedule__description">
+              <div class="schedule__description_title">
+                Свободные активности
+              </div>
+              <div class="schedule__description_text">
+                <span class="text-pointer">Место:</span>
+                <span
+                  >см. вкладку “Активности” <br />
+                  Игры, фотозоны, просмотр видео</span
+                >
+              </div>
+              <div class="schedule__description_title">Просмотр видео</div>
+              <div class="schedule__description_text">
+                <span class="text-pointer">Место:</span>
+                <span>столовая (2 корпус, повтор в 14.00, 14:30 и 15:00)</span>
+              </div>
+            </div>
+          </div>
+          <div class="schedule__item">
+            <div class="schedule__time">17:00</div>
+            <div class="schedule__description">
+              <div class="schedule__description_title">Ужин</div>
+              <div class="schedule__description_text">
+                <span class="text-pointer">Место:</span>
+                <span
+                  >см. карту локаций ниже <br />
+                  <i>В 18:00 оставшаяся еда будет убрана в столовую</i></span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="schedule__item">
+            <div class="schedule__time">19:00</div>
+            <div class="schedule__description">
+              <div class="schedule__description_title">Уборка</div>
+            </div>
+          </div>
+          <div class="schedule__item">
+            <div class="schedule__time">20:00</div>
+            <div class="schedule__description">
+              <div class="schedule__description_title">Дискотека</div>
+              <div class="schedule__description_text">
+                <span class="text-pointer">Место:</span>
+                <span>В столовой (корпус 2)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu" class="menu">
+        <div class="headline">
+          <h2>Фуд-корт</h2>
+        </div>
+        <div class="menu__map"></div>
+        <div class="menu__schedule">
+          <div class="schedule__item">
+            <div class="schedule__time">12:20</div>
+            <div class="schedule__description">
+              <div class="schedule__description_title">Обед</div>
+              <div class="schedule__description_text">
+                <div><span>Плов</span></div>
+                <div><span>Салаты(ачучук, капустный)</span></div>
+                <div><span>Лепешки</span></div>
+                <div><span>Корнишоны</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="schedule__item">
+            <div class="schedule__time">13:00</div>
+            <div class="schedule__description">
+              <div class="schedule__description_title">Десерт</div>
+              <div class="schedule__description_text">
+                <div><span>Торт бисквитный</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="schedule__item">
+            <div class="schedule__time">17:00</div>
+            <div class="schedule__description">
+              <div class="schedule__description_title">Ужин</div>
+              <div class="schedule__description_text">
+                <div><span>Крылышки Баффало</span></div>
+                <div><span>Картошка Фри</span></div>
+                <div><span>Соусы (сырный/ фермерский/барбекю)</span></div>
+                <div><span>Салат coleslaw</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="schedule__item">
+            <div class="schedule__time">17:30</div>
+            <div class="schedule__description">
+              <div class="schedule__description_title">Десерт</div>
+              <div class="schedule__description_text">
+                <div><span>Торты Куликовские</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="menu__footer">
+            <span
+              >Мороженное сливочное и шоколадное доступно в течение дня</span
+            >
+          </div>
+        </div>
+      </div>
+      <div id="bar" class="bar">
+        <div class="headline"><h2>Барное меню</h2></div>
+        <div class="bar__schedule">
+          <div class="bar__schedule-item">
+            <div class="schedule__time">12:15 - 13:45</div>
+            <div class="schedule__description">
+              <div class="schedule__description_text">Мохито, пиво, вино</div>
+            </div>
+          </div>
+          <div class="bar__schedule-item">
+            <div class="schedule__time">14:00 - 15:00</div>
+            <div class="schedule__description">
+              <div class="schedule__description_text">Бабл ти</div>
+            </div>
+          </div>
+          <div class="bar__schedule-item">
+            <div class="schedule__time">16:30 - 18:00</div>
+            <div class="schedule__description">
+              <div class="schedule__description_text">
+                Шоколадный милкшейк, пиво, вино
+              </div>
+            </div>
+          </div>
+          <div class="menu__footer">
+            <span
+              >Кола, соки, кофе и вода будут доступны весь день на точках
+              раздачи еды/барах</span
+            >
+          </div>
+        </div>
+      </div>
+      <div id="activities" class="activities">
+        <div class="headline"><h2>Игры и активности</h2></div>
+        <div class="activities__container">
+          <a href="/games.html"
+            ><button class="activities__button button">Карта</button></a
+          >
+        </div>
+      </div>
+    </main>
+    <div id="announcements" class="dialog">
+      <div class="dialog-header">
+        <div class="dialog-header__text">Объявления</div>
+        <div class="dialog-header__close-button">
+          <img src="/assets/icons/close_icon.svg" />
+        </div>
+      </div>
+      <div class="dialog-body">
+        <div class="dialog-body__text">
+          <b>Ссылка на сайт:</b><br />
+          <br />
+          <ul>
+            <li>
+              Пожалуйста, не отправляйте ссылку на этот сайт тем, кто не
+              приглашен на семейный день
+            </li>
+          </ul>
+          <br />
+
+          <b>Формат мероприятия:</b> <br />
+          <br />
+          <ul>
+            <li>
+              Ожидаются свободные активности, подробнее о которых вы можете
+              узнать на этом сайте.
+            </li>
+            <br />
+
+            <li>
+              Вы можете решить во что одеться исходя из того в каких 
+              активностях вы хотите поучаствовать
+            </li>
+            ​
+            <br />
+          </ul>
+
+          <b>Напоминание о фото и видео:</b> <br />
+          <br />
+          <ul>
+            <li>
+              Пожалуйста не выкладывайте фото или видео ни в какие социальные
+              сети, а также интернет ресурсы, где они могут иметь доступ для
+              тех, кто не был на семейном дне
+            </li>
+            <br />
+
+            <li>
+              Если вы хотите с кем-то сфотографиро-ваться или
+              снять видео, пожалуйста, сперва спросите разрешения
+            </li>
+          </ul>
+          <br />
+
+          <b>Алкогольные напитки:</b> <br />
+          <br />
+          <ul>
+            <li>
+              Алкогольные напитки будут доступны только в определенное время
+            </li>
+            ​
+            <br />
+
+            <li>
+              Мы полагаемся на ваше здраво-мыслие и рассудительность в этом
+              вопросе
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script>
+      function openModal(modalId) {
+        let modal = document.getElementById(modalId);
+        let btn = document.getElementById(`${modalId}-button`);
+
+        modal.style.display = "block";
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+            modal = null;
+          }
+        };
+        let span = modal.getElementsByClassName(
+          `dialog-header__close-button`
+        )[0];
+        span.onclick = function () {
+          modal.style.display = "none";
+          modal = null;
+        };
+      }
+    </script>
+  </body>
+</html>

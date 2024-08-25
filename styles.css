@@ -1,0 +1,402 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+b {
+    font-weight: 700;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+ul li {
+    list-style-type: circle;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+h2 {
+    color: #EE7F50;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.button {
+    background-color: #EE7F50;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 800;
+    font-size: 17px;
+    width: 60vw;
+    height: 40px;
+    border-radius: 20px;
+    letter-spacing: 3px;
+}
+
+.headline {
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-block {
+    width: 100%;
+    background-image: url('/assets/img/header-background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 45px 0 0;
+    position: relative;
+}
+
+.welcome-block__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.welcome-block__text-container {
+    color: #fff;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    line-height: 1.3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.welcome-block__button_container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.welcome-block__buttons {
+    text-transform: uppercase;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    background-color: #EE7F50;
+    color: #fff !important;
+    margin: 10px;
+    flex-basis: calc(33% - 30px);
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33vw;
+}
+
+.welcome-block__announcements {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.welcome-block__announcements-button {
+    background-color: #5B91CC;
+}
+
+.schedule__time {
+    color: #5B91CC;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    min-width: 46px;
+}
+
+.schedule__description_title {
+    font-weight: 600;
+}
+
+.menu__footer {
+    font-weight: 500;
+    font-size: 14px;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.main-schedule {
+    margin: 36px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-schedule__info {
+    margin-top: 23px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding-top: 20px;
+    border-radius: 38px;
+    background-color: #FEF6F3;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.menu__schedule {
+    margin: 16px;
+}
+
+.menu__map {
+    width: 110%;
+    min-height: 250px;
+    background-image: url('/assets/img/foods.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80% 50%;
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding-top: 20px;
+    border-radius: 38px;
+    background-color: #F2F6FB;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.bar__schedule {
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.activities {
+    padding-top: 25px;
+}
+
+.bar__schedule-item {}
+
+.schedule__item {
+    display: flex;
+    column-gap: 9px;
+}
+
+.schedule__description {
+    line-height: 1.3;
+}
+
+.activities__container {
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+}
+
+.dialog-body__text {
+    font-size: 14px;
+}
+
+.games-header {
+    display: flex;
+    align-items: center;
+    column-gap: 9px;
+    margin: 42px 24px 24px;
+}
+
+.header__back-button-text {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.games-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.games-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 11px;
+}
+
+.games-map {
+    width: 100%;
+    min-height: 180px;
+    background-image: url('/assets/img/games.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.games__button {
+    width: 72vw;
+    margin: 0 auto;
+}
+
+.dialog {
+    padding: 20px 0;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.dialog-header {
+    position: relative;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 90%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.dialog-body {
+    position: relative;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 20px;
+    width: 90%;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.dialog-header__text {
+    letter-spacing: 2px;
+    color: #EE7F50;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.game-link {
+    color: #EE7F50;
+    text-decoration: underline;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.game-image > img {
+    width: 100%;
+    height: 100%;
+}
