@@ -131,9 +131,9 @@ h2 {
 }
 
 .welcome-block__text-container {
-    color: #fff;
+    color: #5B91CC;
     font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 25px;
     display: flex;
     justify-content: center;
@@ -141,7 +141,6 @@ h2 {
     letter-spacing: 4px;
     text-align: center;
     line-height: 1.3;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .welcome-block__button_container {
@@ -178,6 +177,20 @@ h2 {
 
 .welcome-block__announcements-button {
     background-color: #5B91CC;
+}
+
+.announcements {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding-top: 20px;
+    border-radius: 38px;
+    background-color: #F2F6FB;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.announcements__text {
+    margin: 16px;
 }
 
 .schedule__time {
@@ -352,7 +365,7 @@ h2 {
     position: relative;
     background-color: #fff;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 20px 20px;
     width: 90%;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -404,4 +417,13 @@ h2 {
 .game-image > img {
     width: 100%;
     height: 100%;
+}
+
+.safety__title {
+    color: #5B91CC;
+    font-weight: 700;
+}
+
+.safety__text {
+    font-weight: 400;
 }

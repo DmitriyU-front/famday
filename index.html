@@ -32,19 +32,72 @@
               пожаловать!</span
             >
           </div>
-          <div class="welcome-block__announcements">
-            <button
-              id="announcements-button"
-              class="button welcome-block__announcements-button"
-              onclick="openModal('announcements')"
-            >
-              Объявления
-            </button>
-          </div>
         </div>
       </div>
     </header>
     <main>
+      <div id="announcements" class="announcements">
+        <div class="headline">
+          <h2>Объявления</h2>
+        </div>
+        <div class="announcements__text">
+          <b>Ссылка на сайт:</b><br />
+          <br />
+          <ul>
+            <li>
+              Пожалуйста, не отправляйте ссылку на этот сайт тем, кто не
+              приглашен на семейный день
+            </li>
+          </ul>
+          <br />
+
+          <b>Безопасность:</b> <br />
+          <br />
+          <ul>
+            <li>
+              Будьте осторожны! Мы не хотим, чтобы кто-то получил травму.
+            </li>
+            <br />
+
+            <li>
+              Родители, помните, что вам важно следить за своими детьми.
+            </li>
+            ​
+            <br />
+          </ul>
+
+          <b>Напоминание о фото и видео:</b> <br />
+          <br />
+          <ul>
+            <li>
+              Пожалуйста не выкладывайте фото или видео ни в какие социальные
+              сети, а также интернет ресурсы, где они могут иметь доступ для
+              тех, кто не был на семейном дне
+            </li>
+            <br />
+
+            <li>
+              Если вы хотите с кем-то сфотогра-фироваться или снять видео, пожалуйста, сперва спросите разрешения.
+            </li>
+          </ul>
+          <br />
+
+          <b>Алкогольные напитки:</b> <br />
+          <br />
+          <ul>
+            <li>
+              Алкогольные напитки будут доступны только в определенное время.
+            </li>
+            ​
+            <br />
+
+            <li>
+              Мы полагаемся на ваше здраво-мыслие и рассудительность в этом
+              вопросе.
+            </li>
+          </ul>
+        </div>
+      </div>
       <div id="schedule" class="main-schedule">
         <div class="headline"><h2>Программа дня</h2></div>
         <div class="main-schedule__info">
@@ -85,7 +138,7 @@
                 <span class="text-pointer">Место:</span>
                 <span
                   >см. вкладку “Активности” <br />
-                  Игры, фотозоны, просмотр видео</span
+                  Игры, фотозоны</span
                 >
               </div>
               <div class="schedule__description_title">Просмотр видео</div>
@@ -291,26 +344,5 @@
         </div>
       </div>
     </div>
-    <script>
-      function openModal(modalId) {
-        let modal = document.getElementById(modalId);
-        let btn = document.getElementById(`${modalId}-button`);
-
-        modal.style.display = "block";
-        window.touchend = function (event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-            modal = null;
-          }
-        };
-        let span = modal.getElementsByClassName(
-          `dialog-header__close-button`
-        )[0];
-        span.onclick = function () {
-          modal.style.display = "none";
-          modal = null;
-        };
-      }
-    </script>
   </body>
 </html>
