@@ -157,6 +157,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 480px;
 }
 
 .welcome-block__buttons {
